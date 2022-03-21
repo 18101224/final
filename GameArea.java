@@ -25,7 +25,7 @@ public class GameArea extends JPanel{
         gridCellSize=this.getBounds().width/ columns;
         gridRows =this.getBounds().height / gridCellSize;
         background = new Color[gridRows][gridColumns];
-    }
+    } 
     private boolean checkBottom(){
         if(block.getBottomEdge()== gridRows){
             return false;

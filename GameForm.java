@@ -29,7 +29,7 @@ public class GameForm extends JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        gameAreaPlaceholder.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        gameAreaPlaceholder.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         gameAreaPlaceholder.setPreferredSize(new java.awt.Dimension(150, 270));
 
         javax.swing.GroupLayout gameAreaPlaceholderLayout = new javax.swing.GroupLayout(gameAreaPlaceholder);
@@ -48,16 +48,16 @@ public class GameForm extends JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(125, 125, 125)
+                .addGap(110, 110, 110)
                 .addComponent(gameAreaPlaceholder, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(125, Short.MAX_VALUE))
+                .addContainerGap(140, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(15, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(14, 14, 14)
                 .addComponent(gameAreaPlaceholder, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         pack();
@@ -67,9 +67,11 @@ public class GameForm extends JFrame {
     // End of variables declaration//GEN-END:variables
     private GameArea ga;
     public GameForm() {
+        initComponents();
         ga = new GameArea(gameAreaPlaceholder,10);
         this.add(ga); //프레임 안에 게임 화면 생성 , 열의 개수 지정
         //게임화면 객체도 여기에서 생성
+        
         initControls();
         startGame();                                           
     }
