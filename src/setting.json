@@ -1,0 +1,31 @@
+{
+  "customKey": {
+    "resume": 82,
+    "drop": 68,
+    "exit": 27,
+    "left": 37,
+    "up": 38,
+    "right": 39,
+    "down": 40,
+    "pause": 80,
+    "quickDown": 81
+  },
+  "difficulty": "normal",
+  "display": {
+    "width": 1000,
+    "height": 1500
+  },
+  "gameMode": "normal",
+  "defaultKey": {
+    "resume": 82,
+    "drop": 68,
+    "exit": 27,
+    "left": 37,
+    "up": 38,
+    "right": 39,
+    "down": 40,
+    "pause": 80,
+    "quickDown": 81
+  },
+  "displayMode": "blind"
+}
